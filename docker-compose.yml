@@ -5,7 +5,7 @@ services:
     image: ${DOCKER_REGISTRY-}catalogapi
     build:
       context: .
-      dockerfile: Services/Catalog/Dockerfile
+      dockerfile: src/Services/Catalog/Dockerfile
     depends_on:
       - mongo   
   mongo:
